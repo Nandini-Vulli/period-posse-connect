@@ -1,20 +1,18 @@
 
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
+import ProfileComponent from "@/components/Profile";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const Profile = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow">
-        <Hero />
-        <Features />
+      <main className="flex-grow py-16 mt-16">
+        <ProfileComponent />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Profile;
