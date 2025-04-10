@@ -15,7 +15,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-  const [college, setCollege] = useState("");
+  const [location, setLocation] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const { toast } = useToast();
   
@@ -42,7 +42,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
         <CardDescription>
           {type === "login" 
             ? "Sign in to your RedAlert account" 
-            : "Join the community that helps each other"}
+            : "Join our community of support and empowerment"}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -61,12 +61,12 @@ const AuthForm = ({ type }: AuthFormProps) => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="college">College/University</Label>
+                <Label htmlFor="location">Location (City/Area)</Label>
                 <Input 
-                  id="college" 
-                  placeholder="Enter your college" 
-                  value={college}
-                  onChange={(e) => setCollege(e.target.value)}
+                  id="location" 
+                  placeholder="Enter your city or area" 
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
                 />
               </div>
             </>
