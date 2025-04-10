@@ -1,10 +1,11 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Separator } from "@/components/ui/separator";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Award, Edit2, Heart, MapPin, Settings, User } from "lucide-react";
-import Badge from "./Badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Progress } from "@/components/ui/progress";
+import { Award, Gift, Heart, Clock, CheckCircle, MessageCircle, MapPin, Bell, Settings } from "lucide-react";
 
 const Profile = () => {
   return (
