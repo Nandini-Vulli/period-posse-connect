@@ -70,35 +70,11 @@ const Features = () => {
 
         <div className="mt-20 text-center">
           <div className="inline-flex items-center justify-center px-6 py-3 border border-redalert-200 rounded-full text-redalert-700 bg-redalert-50">
-            <span className="text-sm font-medium">Join 2,500+ people in our community</span>
+            <span className="text-sm font-medium">Be among the first to join our community</span>
           </div>
           
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <div className="flex -space-x-4 overflow-hidden">
-              {[1, 2, 3, 4, 5].map((_, i) => (
-                <div
-                  key={i}
-                  className={`w-10 h-10 rounded-full border-2 border-white flex items-center justify-center bg-gradient-to-br ${
-                    i % 2 === 0 ? "from-redalert-400 to-redalert-500" : "from-lavender-400 to-lavender-500"
-                  }`}
-                >
-                  <span className="text-xs font-medium text-white">
-                    {String.fromCharCode(65 + i)}
-                  </span>
-                </div>
-              ))}
-            </div>
-            
-            <div className="bg-white shadow-md rounded-full px-6 py-2 flex items-center space-x-2">
-              <div className="flex items-center space-x-1">
-                {[1, 2, 3, 4, 5].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <span className="text-gray-700 font-medium">4.9 rating</span>
-            </div>
+          <div className="mt-10">
+            <p className="text-gray-600">RedAlert is a newly launched app. Join now and help shape the future of period support!</p>
           </div>
         </div>
       </div>
